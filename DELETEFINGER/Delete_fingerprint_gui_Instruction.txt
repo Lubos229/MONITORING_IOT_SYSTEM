@@ -1,0 +1,61 @@
+Inštrukcie/Instructions SK /ENG   DELETEFINGER.ino
+
+SK
+
+Riadky 21-22
+SSID, heslo treba nastaviť,
+Camera - M5Stack ESP32 PSRAM Timer Kamera X  (https://rpishop.cz/kamery/4232-m5stack-esp32-psram-timer-kamera-x-ov3660.html)
+FINGERPRINT - AS 608 (https://techfun.sk/en/product/as608-fingerprint-sensor/)
+connected via groove connector (13 RX, 4 TX) !
+
+
+Potrebné vytvorenie API, senzor AS608 ukladá odtlačky prstov do svojej pamäte, chceme totožné ID v pamäti senzora mať aj v našej databáze. 
+const char* serverAddress = "http://***************/receive_data";      // ZMEN na local ip svoju.., change to your LOCAL IP 
+const char* serverAddressPython = "http://************/send_fingerprint_data"; // ZMEN na local ip svoju.., change to your LOCAL IP 
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Delete_fingerprint_GUI.py
+
+
+
+Aby sme dokázali pracovať s GUI a vymazavať ID odtlačku prsta aj v pamati senzora AS608 je potrebne spustiť skript: DELETEFINGER.ino
+Teda nahrat do M5 STACK ESP32 KAMERY.
+
+Delete_fingerprint_GUI.py
+Uzivatel moze vymazavat riadky v databaze, odstranit ID odtlačkov v pamati senzora AS608.
+
+Riadky 24-30 , Treba nastaviť prihlasenie do databazy
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ENG
+Lines 21-22
+SSID, password must be set,
+Camera - M5Stack ESP32 PSRAM Timer Camera X (https://rpishop.cz/kamery/4232-m5stack-esp32-psram-timer-kamera-x-ov3660.html)
+FINGERPRINT - AS 608 (https://techfun.sk/en/product/as608-fingerprint-sensor/)
+connected via groove connector (13 RX, 4 TX) !
+
+
+Necessary API creation, the AS608 sensor stores fingerprints in its memory, we want to have the same ID in the sensor's memory and in our database.
+const char* serverAddress = "http://****************/receive_data"; // CHANGE to your local ip.., change to your LOCAL IP
+const char* serverAddressPython = "http://************/send_fingerprint_data"; // CHANGE to your local ip.., change to your LOCAL IP
+
+
+
+
+-------------------------------------------------- -------------------------------------------------- -------------------------------------------------- -----------
+Delete_fingerprint_GUI.py
+
+
+
+In order to be able to work with the GUI and delete the fingerprint ID also in the memory of the AS608 sensor, it is necessary to run the script: DELETEFINGER.ino
+So upload to M5 STACK ESP32 CAMERA.
+
+Delete_fingerprint_GUI.py
+The user can delete rows in the database, remove the fingerprint ID in the memory of the AS608 sensor.
+
+Lines 24-30, Login to the database must be set
+
