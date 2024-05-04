@@ -5,3 +5,6 @@ These steps led to the creation of a comprehensive attendance system that allows
 In addition, we also worked on monitoring movement in the designated area and implementing services for archiving photos and sending alerts when security breaches occur.
 The results of this work can contribute to the development and use of IoT, where the simple and efficient use of the application by employees is ensured and the risk of errors in the attendance tracking process is minimized.
 Monitoring movement in designated areas can contribute to increasing efficiency and safety in the work environment.
+
+
+Author Ľuboš Prekop
